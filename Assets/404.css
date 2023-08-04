@@ -1,0 +1,164 @@
+/* Global styles */
+body {
+  color: #000000;
+  font-family: 'Richie';
+}
+
+/* Background */
+.back {
+  background-image: url(../Assets/Img/404/404.png);
+  background-size: cover;
+}
+
+/* Max width */
+.maxw {
+  max-width: 1440px;
+  max-height: auto;
+}
+
+/* Not found section */
+.notfound {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound h2 {
+  font-weight: 300;
+  font-size: 160px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  margin-top: 165px;
+  margin-bottom: 10px;
+}
+
+.notfound span {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  margin-bottom: 38px;
+}
+
+.notfound p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+  display: grid;
+  justify-content: center;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.btn div button {
+  background-color: rgba(0, 71, 255, 1);
+  border: transparent;
+  width: 199px;
+  height: 58px;
+  box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+.btn div button a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+}
+
+/* Button hover effects */
+.btn div button:hover {
+  background: rgba(0, 71, 255, 0.05);
+  border: 1px solid #2F69FF;
+}
+
+.btn div button:hover a {
+  color: #2F69FF;
+}
+
+/* RESPONSIVE STYLES */
+
+@media only screen and (max-width: 1536px) {
+  .notfound h2 {
+      font-size: 130px;
+  }
+  .notfound span {
+      font-size: 50px;
+  }
+  .notfound p {
+      font-size: 10px;
+  }
+  .btn div button {
+      width: 180px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .notfound h2 {
+      font-size: 125px;
+  }
+  .notfound span {
+      font-size: 45px;
+  }
+  .notfound p {
+      font-size: 10px;
+  }
+  .btn div button a {
+      font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .notfound h2 {
+      font-size: 110px;
+  }
+  .notfound span {
+      font-size: 40px;
+  }
+  .notfound p {
+      font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .notfound h2 {
+      font-size: 100px;
+  }
+  .notfound span {
+      font-size: 35px;
+  }
+  .notfound p {
+      font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound h2 {
+      font-size: 95px;
+  }
+  .notfound span {
+      font-size: 30px;
+  }
+  .btn div button {
+      width: 150px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .notfound h2 {
+      font-size: 95px;
+  }
+  .notfound span {
+      font-size: 30px;
+  }
+  .btn div button {
+      width: 125px;
+      height: 40px;
+  }
+}

@@ -1,0 +1,632 @@
+*{
+    font-family: 'Richie';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+/*Header*/
+header > .logo{
+    display: grid;
+    justify-content: center;
+    padding-top: 37px;
+    height: 40px;
+}
+.logo > a{
+    position: absolute;
+    top: 48px;
+    left: 110px;
+}
+.nav-toggle-left{
+    position: absolute;
+    top: 48px;
+    left: 50px;
+    color: #FFFFFF;
+}
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 32px;
+    z-index: 3;
+  }
+  
+.nav-toggle:hover .bar {
+    background-color: #c8c8c8;
+}
+
+.nav-toggle .bar {
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: all 100ms ease-in-out;
+}
+  
+.nav-toggle:hover {
+    cursor: pointer;
+}
+  
+.x:nth-of-type(1) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 30px;
+}
+  
+.x:nth-of-type(2) {
+      transition: all 100ms ease-in-out;
+    transform-origin: center;
+    width: 0;
+  }
+  
+.x:nth-of-type(3) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 29px;
+}
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #345ABB;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+.language-menu {
+    margin-left: 138px;
+    margin-top: 64px;
+}
+  
+.menu > .language-menu > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 24px;
+}
+  
+.menu > ul {
+    list-style: none;
+    margin-top: 177px;
+    margin-left: 138px;
+}
+  
+.menu > ul > li > a {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 172%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu > ul > li {
+    margin-bottom: 50px;
+}
+  
+.menu.show {
+    display: block;
+    animation: fadeIn 0.7s;
+}  
+
+/*Font components*/
+h1{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+}
+h2{
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+}
+h3{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 52px;
+}
+h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+.mega > h1{
+    font-weight: 300;
+    font-size: 112px;
+    line-height: 100%;
+}
+.p1{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 180%;
+}
+.p2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.p3{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+}
+
+/*Buttons*/
+
+button:hover {
+    cursor: pointer;
+}
+.btn > button{
+    background-color: rgba(0, 71, 255, 1);
+    border: transparent;
+
+    width: 199px;
+    height: 58px;
+    box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+.btn > button > a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    text-decoration: none;
+}
+.btn > button:hover button{
+    background: rgba(0, 71, 255, 0.05);
+    border: 1px solid #2F69FF;
+}
+.btn > button:hover a{
+    color: #2F69FF;
+}
+
+/*Footer */
+/* Add this CSS to create the parallax effect for the footer */
+
+.bottom-logo{
+    grid-column: span 12;
+    padding-top: 120px;
+    padding-bottom: 180px;
+    padding-left: 131px;
+    padding-left: 37px;
+    height: 28px;
+    width: 68.95px;
+    left: 131px;
+    top: 120px;
+    border-radius: 0px;
+}
+.info{
+    background-color: rgba(1, 49, 170, 0.8);
+    background-size: cover;
+    margin-top: 180px;
+    height: 100vh;
+    }
+.info > div > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.info > div > ul > li > a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 170%;
+}
+.info > div > ol > li > a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+}
+.info> div > ul, ol > li{
+    list-style-type: none;
+}
+.info > div > p{
+    color: #FFFFFF;
+}
+.travel-li > a{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+}
+.info{
+    padding-left: 131px;
+    padding-right: 136px;
+}
+.contact{
+    grid-column: span 5;
+}
+.social-icons {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.navigation-footer{
+    grid-column: span 5;
+}
+.location{
+    grid-column: span 2;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    text-align: left;
+}
+.info > hr{
+    grid-column: span 12;
+    margin-top: 140px;
+}
+.copyright{
+    grid-column: span 7;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+.copyright img{
+    margin-top: 16px;
+}
+.fast-menu{ 
+    grid-column: span 5;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+.fast-menu a{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+}
+.fast-menu > a:nth-child(-n + 2){
+    margin-right: 60px;
+}
+.frame{
+    margin-bottom: 120px;
+}
+
+/*Font weights and family*/
+@font-face{
+    src: url(../Assets/Fonts/Fonts/RischeLight.otf);
+    font-family: Richie;
+    font-weight: 300;
+    }
+@font-face{
+    src: url(../Assets/Fonts/Fonts/RischeRegular.otf);
+    font-family: Richie;
+    font-weight: 400;
+}
+ @font-face{
+    src: url(../Assets/Fonts/Fonts/RischeMedium.otf);
+    font-family: Richie;
+    font-weight: 500;
+}
+@font-face{
+    src: url(../Assets/Fonts/Fonts/RischeSemibold.otf);
+    font-family: Richie;
+    font-weight: 600;
+}
+@font-face{
+    src: url(../Assets/Fonts/Fonts/RischeBold.otf);
+    font-family: Richie;
+    font-weight: 700;
+}
+@font-face{
+    src: url(../Assets/Fonts/Fonts/Satoshi-Variable.ttf);
+    font-family: Satoshi;
+}
+/*Colors*/
+.mgray{
+    background: #838383;
+}
+.white{ 
+    background: #FFFFFF;
+}
+.black{
+    background: #000000;
+}
+.blue{
+    color: #0047FF;
+}
+.lgray{
+    background: #FAFAFA;
+}
+.blueoverlay{
+    background-color: rgba(1, 49, 170, 0.8);
+}
+
+/*RESPONZIVA*/
+
+@media only screen and (max-width: 1536px) {
+
+.menu > ul > li > a {
+  font-size: 40px;
+}
+
+.menu ul {
+    margin-top: 175px;
+    margin-left: 135px;
+}
+
+.menu ul > li {
+  margin-bottom: 45px;
+}
+
+.language-menu {
+  margin-left: 129px;
+  margin-top: 60px;
+}
+
+
+.info  div  ol  li  a {
+    font-size: 33px;
+}
+
+.info  div  ul  li  a {
+    font-size: 23px;
+}
+
+.location {
+    font-size: 9px;
+}
+
+.fast-menu  a:nth-child(-n+2) {
+    margin-right: 8px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+
+.menu > ul > li > a {
+  font-size: 35px;
+}
+
+.menu ul {
+    margin-top: 160px;
+    margin-left: 130px;
+}
+
+.menu ul > li {
+  margin-bottom: 40px;
+}
+
+.language-menu {
+  margin-left: 125px;
+  margin-top: 55px;
+}
+
+.info  div  ol  li  a {
+    font-size: 29px;
+}
+
+.info  div  ul  li  a {
+    font-size: 22px;
+}
+
+.location {
+    font-size: 8px;
+}
+
+.fast-menu a:nth-child(-n+2) {
+    margin-right: 0px;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+.menu > ul > li > a {
+  font-size: 30px;
+}
+
+.menu ul {
+    margin-top: 155px;
+    margin-left: 125px;
+}
+
+.menu ul > li {
+  margin-bottom: 35px;
+}
+
+.language-menu {
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+
+.info  div  ol  li  a {
+    font-size: 25px;
+}
+
+.info  div  ul  li  a {
+    font-size: 20px;
+}
+
+.location {
+    font-size: 7px;
+}
+
+.fast-menu a:nth-child(-n+2) {
+    margin-right: 0px;
+}    
+.copyright p{
+    font-size: 10px;
+}
+.fast-menu a{
+    font-size: 8px;
+    letter-spacing: 0.2em;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.menu > ul > li > a {
+  font-size: 25px;
+}
+
+.menu ul {
+    margin-top: 150px;
+    margin-left: 120px;
+}
+
+.menu ul > li {
+  margin-bottom: 25px;
+}
+
+.language-menu {
+  margin-top: 48px;
+}
+
+.info  div  ol  li  a {
+    font-size: 20px;
+}
+
+.info  div  ul  li  a {
+    font-size: 17px;
+}
+
+.location {
+    font-size: 7px;
+}
+  
+.copyright p{
+    font-size: 15px;
+}
+
+.fast-menu a{
+    font-size: 8px;
+    letter-spacing: 0em;
+}
+
+.nav-toggle-left-black {
+    opacity: 0;
+}
+
+.logo a{
+    left: 40px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+
+.menu > ul > li > a {
+  font-size: 30px;
+}
+
+.menu ul {
+    margin-top: 125px;
+    margin-left: 100px;
+}
+
+.menu ul > li {
+  margin-bottom: 20px;
+}
+
+.language-menu {
+  margin-top: 48px;
+  margin-left: 100px;
+}
+
+
+.contact {
+    grid-column: span 12;
+    margin-bottom: 64px;
+}
+
+.navigation-footer {
+    grid-column: span 12;
+    margin-bottom: 64px;
+}
+
+.location {
+    grid-column: span 12;
+}
+
+.copyright{
+    grid-column: span 12;
+}
+
+.fast-menu{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: span 12;
+}
+.info > hr {
+    margin-top: 50px;
+}
+
+.info  div  ol  li  a {
+    font-size: 20px;
+}
+.info  div  ul  li  a {
+    font-size: 17px;
+}
+.location {
+    font-size: 7px;
+}
+      
+.copyright p{
+    font-size: 15px;
+}
+
+.nav-toggle-left-black {
+    opacity: 0;
+}
+
+.logo a{
+    left: 40px;
+}    
+}
+
+@media only screen and (max-width: 375px) {
+
+.menu > ul > li > a {
+  font-size: 25px;
+}
+
+.menu ul {
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.menu ul > li {
+  margin-bottom: 15px;
+}
+
+.language-menu {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+
+.info  div  ol  li  a {
+    font-size: 15px;
+}
+.info  div  ul  li  a {
+    font-size: 15px;
+}
+.location {
+    font-size: 6px;
+}
+          
+.copyright p{
+    font-size: 10px;
+}
+    
+.nav-toggle-left-black {
+    opacity: 0;
+}
+    
+.logo a{
+    left: 40px;
+}       
+.social-icons {
+    margin-left: 10px;
+} 
+}

@@ -1,0 +1,1171 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+} 
+
+.img-fullscreen{
+    height: 100vh;
+}
+
+.parallax-section {
+  height: fit-content;
+}  
+
+header {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.40); 
+    z-index: -1;
+}
+
+section{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #345ABB;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+} 
+
+.dream > h1{
+    color: #FFFFFF; 
+}
+
+.dream{
+    grid-column: span 12;
+    padding-top: 244px;
+    padding-left: 138px;
+    height: 202px;
+    width: 755px;
+    border-radius: 0px;
+
+}
+
+.strelica-dolje:hover {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/*BUTTONS*/
+.explore-btn > button {
+    gap: 10px;
+    width: 300px;
+    height: 58px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    margin-top: 24px;
+    box-shadow: none;
+}
+.explore-btn > button:hover a{
+    color: rgba(128, 128, 128);
+}
+.explore-btn button > a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    align-items: center;
+    padding: 20px 48px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.strelica-dolje {
+    grid-column-start: 7;
+    margin-top: 615px;
+}
+
+.inquire{
+    grid-column-start: 11;
+    margin-top: 600px;
+    margin-left: 70px;
+    width: 225px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.inquire > img{
+    width: 75px;
+    height: 48px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.bot-inquire  div > a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.24em;
+    margin-left: 10px;
+    padding: 25px 19px 24px 0px;
+}
+.btn{
+    margin-top: 32px;
+}
+
+
+/*MAIN*/
+span{
+    color:  #0047FF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+}
+
+.section-margine{
+    margin-bottom: 180px;
+}
+
+.about-p{
+    padding-left: 136px;
+    margin-top: 180px;
+}
+
+.luka{
+    grid-column: span 6;
+}
+
+.star{
+    position: relative;
+    bottom: 715px;
+    right: 80px;
+}
+
+.about-cruise{
+    grid-column: span 5;
+    margin-top: 100px;
+    height: 624px;
+    width: 368px;
+}
+
+.ab-details{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    gap: 40px; 
+}
+
+.lenght p{
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+}
+
+.passengers p{
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+}
+
+.cabins p{
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+}
+
+.about-cruise div:nth-child(1){
+    margin-bottom: 56px;
+}
+
+.about-cruise div:nth-child(3){
+    margin-bottom: 16px;
+}
+
+.about-cruise div:nth-child(4){
+    align-self: stretch;
+}
+
+.otoci-p{
+    padding-left: 136px;
+}
+
+.otoci{
+    grid-column: span 5;
+    margin-top: 140px;
+    height: 435px;
+    width: 368px;
+}
+
+.otoci div:nth-child(-n+3){
+    margin-bottom: 20px;
+}
+
+.slide > p{ 
+    bottom: 110px;
+    position: relative;
+    left: 44px;
+    color: #FFFFFF;
+}
+
+.slide p:nth-child(2){ 
+    font-size: 12px;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+    margin-bottom: 8px;
+}
+
+.slide p:nth-child(3){ 
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1.08px; 
+    margin-bottom: 4px;
+}
+
+.slide > p{ 
+    bottom: 110px;
+    position: relative;
+    left: 44px;
+    color: #FFFFFF;
+}
+
+.slide p:nth-child(2){ 
+    font-size: 12px;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 2.76px;
+    text-transform: uppercase; 
+    margin-bottom: 8px;
+}
+
+.slide p:nth-child(3){ 
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1.08px; 
+    margin-bottom: 4px;
+}
+
+.crta{
+    display: block;
+    height: 4px;
+    width: 88px;
+    align-self: stretch; 
+    background: #0047FF;
+    bottom: 110px;
+    position: relative;
+    left: 44px;
+}
+
+.strelice-otoci button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5; /* Lower the opacity to indicate the button is disabled */
+}
+
+.strelice button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5; /* Lower the opacity to indicate the button is disabled */
+}
+
+.otoci-slike {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.slider {
+  grid-column: span 12;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 500px;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 20px;
+}
+
+.slide img {
+  height: 88vh;
+}
+
+.slides-container.grabbing {
+  cursor: grabbing;
+}
+
+.strelice-otoci {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strelice-otoci button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.strelice-otoci img {
+  width: 20px;
+}
+
+
+.strelice-otoci button{
+  grid-column: span 12;
+  justify-self: end;
+}
+
+.ležaljke{
+    grid-column:span 6;
+}
+
+.yoloboardexp{
+    grid-column:span 6;
+    margin-top: 258px;
+    height: 435px;
+    width: 466px;
+}
+
+.yoloboardexp div:nth-child(1){
+    margin-bottom: 16px;
+}
+
+.yoloboardexp div:nth-child(2){
+    margin-bottom: 32px;
+}
+
+.reference{
+    grid-column: span 12;
+    margin-bottom: 16px;
+}
+
+.what-do-they-say{
+    grid-column: span 7;
+    margin-bottom: 214px;
+}
+
+.strelice-otoci{
+    grid-column: span 12;
+    justify-self: end;
+    padding-right: 136px;
+}
+
+.strelice-otoci > button{
+    width: 48px;
+    height: 48px; 
+    border-radius: 48px;
+    background:  #0047FF;
+    border: none;
+}
+
+.strelice-otoci > button:nth-child(2){
+    margin-left: 24px;
+}
+
+.strelice{
+    padding-top: 10px;
+    grid-column: span 5;
+}
+
+.strelice > button:nth-child(2){
+    margin-left: 24px;
+}
+
+.strelice > button{
+    width: 48px;
+    height: 48px; 
+    border-radius: 48px;
+    background:  #0047FF;
+    border: none;
+}
+
+.iskustva{
+    width: 550px;
+    display: grid;
+}
+  
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nice-country {
+  width: 550px;
+  display: grid;
+  margin-left: 430px;
+}
+
+.maya {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-top: 16px;
+  justify-self: center;
+  display: grid;
+}
+
+.eliot {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-top: 16px;
+  justify-self: center;
+}
+.quote{
+    grid-column: span 12;
+    margin-top: 476px;
+    height: 236px;
+    width: 466px;
+    padding-left: 137px;
+    color: #FFFFFF;
+}
+
+.eliot p{
+    margin-left: 12px;
+}
+
+.maya p{
+    margin-left: 12px;
+}
+
+.quote > img{
+    z-index: -1;
+    size: cover; 
+}
+
+.why-yolo{
+    grid-column: span 12;
+    text-align: center;
+    z-index: 1;
+    margin-top: 180px;
+}
+.crkva{
+    grid-column: span 4;
+    padding-left: 115px;
+    margin-top: 115px;
+}
+
+.jahta{
+    grid-column: span 4;
+    margin-left: 100px;
+    margin-bottom: 180px;
+}
+
+.slika-jahte{
+    bottom: 50px;
+    position: relative;
+}
+
+.sretan-par{
+    grid-column: span 4;
+    padding-right: 115px;
+    margin-left: 198px;
+}
+
+.star-jahta{
+    position: relative;
+    bottom: 472px;
+    right: -30px;
+}
+
+/*Aimacije*/
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+
+/*RESPONZIVA*/
+
+@media only screen and (max-width: 1536px) {
+
+header{
+    height: 1080px;
+}
+h1 {
+  font-size: 57px;
+}
+h2 {
+  font-size: 52px;
+}
+.strelica-dolje {
+    margin-top: 555px;
+}
+
+.slide img {
+  height: 67vh;
+}
+
+.inquire {
+    margin-top: 539px;
+    margin-left: 15px;
+    width: 225px;
+    height: 64px;
+}
+.bot-inquire div > a {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+}
+.luka img:first-child {
+    height: 768px;
+}
+.luka img:last-child {
+    height: 80px;
+}
+.btn button {
+  width: 180px;
+}
+
+.btn button a {
+  font-size: 13px;
+}
+
+h4 {
+  font-size: 20px;
+}
+.p1 {
+  font-size: 11px;
+}
+span {
+  font-size: 11px;
+}
+.otoci-slika-1 img {
+  height: 768px;
+}
+.otoci-slika-2 img {
+  height: 768px;
+}
+.ležaljke img {
+  height: 768px;
+  width: auto;
+
+}
+.strelice > button:nth-child(2) {
+    margin-left: 0px;
+}
+.iskustva p{
+    font-size: 12px;
+}
+.nice-country p{
+    font-size: 12px;
+}
+.eliot p {
+    font-size: 12px;
+}
+.eliot img {
+    height: 45px;
+}
+.maya p {
+    font-size: 11px;
+}
+.maya img {
+    height: 45px;
+}
+.quote p {
+    font-size: 11px;
+}
+.crkva {
+  padding-left: 112px;
+  margin-top: 112px;
+}
+.slika-jahte {
+  bottom: 50px;
+  position: relative;
+}
+.star-jahta {
+    bottom: 560px;
+    right: -340px;
+    width: 220px;
+    height: 64px;
+}
+.jahta {
+  margin-left: 40px;
+}
+.sretan-par {
+  padding-right: 110px;
+  margin-left: 198px;
+}
+.info {
+  padding-left: 129px;
+  padding-right: 134px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+.nice-country {
+  margin-left: 150px;
+}
+.about-p {
+  padding-left: 120px;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 50px;
+}
+.strelica-dolje {
+    margin-top: 555px;
+}
+.inquire {
+    margin-left: 0px;
+}
+.bot-inquire div > a {
+  font-size: 10px;
+  letter-spacing: 0.20em;
+}
+.luka img:first-child {
+    height: 670px;
+}
+.luka img:last-child {
+    height: 70px;
+}
+.star {
+    bottom: 625px;
+}
+.btn button {
+  width: 175px;
+}
+
+.btn button a {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 19px;
+}
+.p1 {
+  font-size: 11px;
+}
+.jahta {
+  margin-left: 12px;
+}
+.info {
+  padding-left: 128px;
+  padding-right: 132px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.about-p {
+  padding-left: 100px;
+}
+.about-cruise {
+    margin-top: 30px; 
+}
+.otoci-p {
+  padding-left: 60px;
+}
+.ležaljke {
+  grid-column: span 7;
+}
+.yoloboardexp {
+    grid-column: span 5;
+}
+.yoloboardexp  div:nth-child(3) {
+    width: 327px;
+}
+.strelice {
+  grid-column: span 5;
+}
+.strelice > button:nth-child(2) {
+  margin-left: 15px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 46px;
+}
+.strelica-dolje {
+    margin-top: 555px;
+}
+.iskustva{
+    width: 390px;
+}
+.nice-country {
+    grid-column: span 4;
+    width: 445px
+}
+.inquire {
+    margin-left: -60px;
+}
+.bot-inquire div > a {
+  letter-spacing: 0.15em;
+}
+.luka img:first-child {
+    height: 550px;
+}
+.luka img:last-child {
+    height: 55px;
+}
+.star {
+    bottom: 500px;
+}
+.btn button {
+  width: 170px;
+}
+
+.btn button a {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 19px;
+}
+.p1 {
+  font-size: 11px;
+}
+.info {
+  padding-left: 127px;
+  padding-right: 130px;
+}
+.crkva{
+    padding-left: 45px;
+    height: 200px;
+}
+.jahta {
+    margin-left: -40px;
+    height: 500px;
+}
+.sretan-par {
+  margin-left: 123px;
+  height: 200px;
+}
+.crkva img{
+    height: 200px;
+    width: 200px;
+}
+.jahta img:first-child{
+    height: 500px;
+    margin-bottom: 50px;
+}
+.star-jahta {
+    bottom: 525px;
+    right: -295px;
+}
+.sretan-par img {
+    height: 250px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.nav-toggle-left {
+    opacity: 0;
+}
+.dream {
+  grid-column: span 12;
+  padding-top: 244px;
+  padding-left: 70px;
+}
+.strelica-dolje{
+    opacity: 0;
+}
+.info {
+  padding-left: 120px;
+  padding-right: 110px;
+}
+.about-p {
+  padding-left: 0px;
+}
+.inquire{
+    opacity: 0;
+}
+.luka {
+  grid-column: span 12;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.star {
+    bottom: 495px;
+    right: -369px;
+}
+.about-cruise {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+.otoci {
+    grid-column-start: 3;
+    grid-column-end: 12;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+.otoci-slike {
+  grid-column: span 12;
+  margin-top: 50px;
+}
+.strelice-otoci {
+  justify-self: center;
+  padding-right: 0px;
+}
+.ležaljke {
+  grid-column: span 12;
+  justify-self: center;
+}
+.yoloboardexp {
+  grid-column: span 12;
+  justify-self: center;
+  margin-top: 150px;
+}
+.what-do-they-say {
+  grid-column: span 12;
+  margin-bottom: 100px;
+}
+.strelice {
+  grid-column: span 12;
+  justify-self: center;
+  margin-bottom: 30px;
+}
+.iskustva {
+    grid-column: span 8; 
+}
+.quote {
+  margin-top: 843px;
+  padding-left: 25px;
+}
+.crkva {
+    padding-left: 0px;
+    margin-left: -20px;
+}
+.sretan-par {
+  padding-top: 100px;
+}
+.jahta {
+  margin-left: -58px;
+  height: 450px;
+}
+}
+@media only screen and (max-width: 480px) {
+h4 {
+  font-size: 16px;
+}
+.p1 {
+  font-size: 10px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+    font-size: 34px;
+}
+span {
+  font-size: 9px;
+}
+.iskustva p{
+    font-size: 10px;
+}
+.nice-country p{
+    font-size: 10px;
+}
+.eliot p {
+    font-size: 10px;
+}
+.eliot img {
+    height: 45px;
+}
+.maya p {
+    font-size: 10px;
+}
+.quote p {
+    font-size: 10px;
+}
+.btn button {
+  width: 140px;
+}
+
+.btn button a {
+  font-size: 9px;
+}
+.strelice-otoci{
+    opacity: 0;
+}
+.strelice{
+    opacity: 0;
+}
+.dream {
+  padding-top: 200px;
+  padding-left: 28px;
+  width: auto;
+}
+header{
+    height: 700px;
+}
+.explore-btn  button {
+    width: 250px;
+}
+.explore-btn  button a {
+    font-size: 11px;
+}
+.about-p {
+  margin-top: 120px;
+}
+.about-cruise {
+  padding-right: 100px;
+}
+.otoci {
+    padding-right: 120px;
+}
+.otoci-slika-1 img {
+  height: 500px;
+}
+.otoci-slika-2 img {
+  height: 500px;
+}
+.yoloboardexp {
+  justify-self: center;
+  margin-top: 120px;
+  grid-column: 3/12;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  width: 300px;
+}
+.what-do-they-say {
+  display: grid;
+  align-self: center;
+  text-align: center;
+}
+.section-margine{
+    margin-bottom: 120px;
+}
+.yoloboardexp div:nth-child(3) {
+  width: 387px;
+}
+.otoci-p {
+  padding-left: 38px;
+}
+.nice-country {
+  grid-column: span 2;
+  width: 302px;
+}
+.iskustva {
+  grid-column: span 10;
+  width: 300px; 
+}
+.crkva img{
+    height: 100px;
+    width: 140px;
+    margin-left: -30px;
+}
+.jahta img:first-child{
+    height: 309px;
+    width: 220px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-bottom: 180px;
+}
+.star-jahta {
+    bottom: 525px;
+    right: -295px;
+}
+.sretan-par img {
+    height: 160px;
+    width: 120px;
+    margin-left: -37px;
+}
+.star-jahta {
+  bottom: 377px;
+  right: -147px;
+}
+.star-jahta {
+  height: 40px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+h4 {
+  font-size: 14px;
+}
+.p1 {
+  font-size: 9px;
+}
+h1 {
+  font-size: 29px;
+}
+h2 {
+  font-size: 28px;
+}
+span {
+  font-size: 8px;
+}
+.iskustva p{
+  font-size: 9px;
+}
+.nice-country p{
+  font-size: 9px;
+}
+.luka img:first-child {
+  height: 400px;
+}
+.star {
+  bottom: 388px;
+  right: -249px;
+}
+.info {
+  padding-left: 100px;
+  padding-right: 90px;
+}
+.luka{
+  justify-self: center;
+}
+.eliot p {
+  font-size: 9px;
+}
+.eliot img {
+  height: 30px;
+}
+.maya p {
+  font-size: 9px;
+}
+.maya img {
+  height: 30px;
+}
+.quote p {
+  font-size: 9px;
+}
+.quote {
+  width: 332px;
+}
+.btn button {
+  width: 135px;
+}
+.dream {
+  padding-top: 190px;
+  padding-left: 20px;
+  width: auto;
+}
+.explore-btn  button {
+  width: 213px;
+}
+.explore-btn  button a {
+  font-size: 9px;
+}
+.about-p {
+  margin-top: 110px;
+}
+.about-cruise {
+  padding-right: 170px;
+}
+.otoci {
+  padding-right: 170px;
+}
+.otoci-slika-1 img {
+  height: 450px;
+}
+.otoci-slika-2 img {
+  height: 450px;
+}
+
+.yoloboardexp div:nth-child(3) {
+  width: 280px;
+}
+.what-do-they-say {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.section-margine{
+  margin-bottom: 120px;
+}
+.otoci-p {
+  padding-left: 38px;
+}
+.nice-country {
+  grid-column: span 2;
+  width: 302px;
+}
+.iskustva {
+  grid-column: span 10;
+  width: 264px;
+}
+.crkva img{
+    height: 100px;
+    width: 140px;
+    margin-left: -43px;
+}
+.jahta img:first-child{
+    height: 290px;
+    width: 200px;
+    margin-bottom: 180px;
+}
+.star-jahta {
+    bottom: 467px;
+    right: -131px;
+  }
+.sretan-par img {
+    height: 160px;
+    width: 120px;
+    margin-left: -60px;
+}
+.sretan-par {
+  padding-top: 78px;
+}
+.star-jahta {
+  height: 40px;
+}
+.jahta {
+  margin-bottom: 0px;
+}
+}
