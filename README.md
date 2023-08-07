@@ -1,14 +1,15 @@
 # My_first_project
 Hello, welcome to my first project. I am Antonio Grgić, and I decided to learn some basics of front-end development and showcase the results through this project.
 
-Project Overview:
-I have created three websites so far, and I am currently working on the fourth one. The first website is a 404 page, which is an error message and is designed to be simple. Each following website becomes more complex.
+Project overview:
+I have created three websites so far, and I am currently working on the fourth one. The first website is a 404 page, which is an error message and is designed to be simple. Each following website becomes more complex. 
 
 Order of Creation:
 
    1. 404 Website
    2. Terms of Use Website
    3. Index Website
+   4. Yolo Website
 
 Design:
 All websites are built using CSS Grid, as I found it to be more challenging to learn and wanted to master it by using it throught the entire project.
