@@ -1,0 +1,1282 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.padding {
+  padding-left: 136px;
+  padding-right: 136px;
+}
+
+.parallax-header {
+  height: 100vh;
+}
+
+.img-fullscreen {
+  height: 100vh;
+}
+
+.parallax-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+/* HEADER*/
+header {
+  min-height: 100vh;
+  animation: fadeIn 1.5s ease-in-out;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.40);
+  z-index: -1;
+}
+
+section {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.strelica-dolje:hover {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* MAIN */
+
+.section-margine {
+  margin-top: 180px;
+}
+
+.main {
+  grid-column: span 12;
+  width: 846px;
+  height: 120px;
+  padding-left: 136px;
+  padding-top: 360px;
+  color: #FFFFFF;
+}
+
+.strelica-dolje {
+  grid-column-start: 7;
+  margin-top: 500px;
+}
+
+.welcome-yolo-n {
+  grid-column: span 8;
+  margin-top: -445px;
+  padding-left: 137px;
+}
+
+.hr {
+  width: 668px;
+  height: 0px;
+  color: lightgray;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.welcome-yolo {
+  grid-column: span 8;
+  margin-top: 100px;
+  padding-left: 137px;
+}
+
+.rectangle-first {
+  grid-column: span 4;
+}
+
+.rectangle-first img {
+  height: 100vh;
+}
+
+.welcome-yolo > div > div {
+  margin-bottom: 24px;
+}
+
+span {
+  color: #707070;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.14px;
+}
+
+.welcome-details > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.welcome-details > div > div {
+  margin-left: 16px;
+}
+
+.grey {
+  color: #707070;
+}
+
+.ante > div:first-child {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.ante > div:first-child > div {
+  margin-left: 16px;
+}
+
+.ante > div:nth-child(2) {
+  width: 668px;
+  margin-top: 16px;
+}
+
+.basic {
+  margin-bottom: 40px;
+}
+
+.basic-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.basic-details > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 0px 109px 24px 0px;
+}
+
+.basic-details > div > div {
+  margin-left: 16px;
+}
+
+.tehnical {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 64px;
+}
+
+ /*BLUEPRINT*/
+.blueprint {
+  grid-column: span 12;
+  display: grid;
+  padding-left: 131px;
+  padding-right: 141px;
+  place-items: center;
+  padding-top: 180px;
+}
+
+.blueprint img {
+  max-width: 100%;
+}
+
+.nav-blueprint {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  margin-top: 64px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-blueprint a {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.72px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link::after{
+  content: "";
+  height: 4px;
+  width: 125px;
+  align-self: stretch;
+  background: #0047FF;
+  position: absolute;
+  bottom: -25px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after{
+  opacity: 1;
+}
+
+.svg {
+  opacity: 0;
+  grid-column: span 12;
+  display: grid;
+  justify-self: center;
+  margin-top: 30px;
+}
+.line {
+  height: 4px;
+  opacity: 0;
+}
+
+.exterior {
+  margin-bottom: 40px;
+}
+
+/*EXTERIOR*/
+.grid-area {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 250px));
+  place-items: center;
+  margin-bottom: 64px;
+}
+
+.photos-button{
+  bottom: -87px;
+  position: relative;
+  left: -316px;
+  height: 48px;
+  width: 166px;
+  background-color: #FFFFFF;
+  border-color: #000;
+  border-style:solid;
+}
+
+.exterior-prvi {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row: span 2;
+}
+
+.exterior-drugi {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row: span 1;
+}
+
+.exterior-drugi-txt {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row: span 1;
+  padding-bottom: 291px;
+  width: 368px;
+}
+
+.exterior-treci {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row: span 1;
+  display: grid;
+  padding-top: 5px;
+}
+
+.ship-ameneties {
+  grid-column: span 12;
+}
+
+.ameneties {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.ameneties > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.ameneties > div > div {
+  margin-left: 16px;
+}
+
+/*CABINS*/
+.cabins {
+  margin-bottom: 40px;
+}
+
+.cabins-pics {
+  grid-column: span 12;
+  margin-bottom: 64px;
+}
+
+.pic-one {
+  grid-column: span 4;
+}
+
+.pic-two {
+  grid-column: span 4;
+}
+
+.pic-three {
+  grid-column: span 4;
+}
+
+.double-cabins {
+  grid-column: span 4;
+  margin-top: 64px;
+}
+
+.twin-cabins {
+  grid-column: span 4;
+  margin-top: 64px;
+}
+
+.tripple-cabins {
+  grid-column: span 4;
+  margin-top: 64px;
+}
+
+.cabins-ameneties {
+  grid-column: span 12;
+}
+
+/*SALOON*/
+.saloon {
+  grid-column: span 12;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+.saloon-pic-one {
+  grid-column: span 6;
+  padding-left: 236px;
+}
+
+.saloon-pic-two {
+  grid-column: span 6;
+  margin-bottom: 289px;
+  margin-top: 188px;
+}
+
+/*DINING EXPERIENCE*/
+.dining-pic-one {
+  grid-column: span 6;
+}
+
+.dining-exp {
+  grid-column: 7 / 12;
+  height: 104px;
+}
+
+.dining-pic-two {
+  grid-column: 7 / 12;
+}
+
+.plates-of-food {
+  grid-column: span 12;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+/*MEDITERAN STYLE*/
+.grid-area-inverted {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 300px));
+  place-items: center;
+  margin-bottom: 64px;
+  margin-top: 218px;
+  margin-bottom: 200px;
+}
+
+.med-dining {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row: span 1;
+  padding-bottom: 250px;
+  height: 104px;
+  width: 366px;
+  padding-bottom: 300px;
+}
+
+.fish {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row: span 1;
+}
+
+.dinner {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  grid-row: span 1;
+  height: max-content;
+  margin-bottom: 260px;
+}
+
+.waiter {
+  grid-column: span 6;
+  padding-left: 236px;
+}
+
+.lounge-area {
+  grid-column: span 6;
+  margin-top: 188px;
+  margin-left: 132px;
+}
+
+.all-photos{
+  align-items: center;
+  gap: 10px; 
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.all-photos a {
+  font-family: Work Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; 
+  letter-spacing: 2.76px;
+  text-transform: uppercase; 
+  text-decoration: none; 
+  color: #000;
+}
+
+.toys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.toys > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.toys > div > div {
+  margin-left: 16px;
+}
+
+.on-request {
+  margin-top: 48px;
+}
+
+.financing {
+  grid-column: span 12;
+  margin-bottom: 64px;
+}
+
+.price {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 64px;
+}
+
+.financing-hr {
+  color: lightgray;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 1300px;
+}
+
+.deposit-txt {
+  width: 568px;
+  height: 54px;
+}
+
+.inclusions {
+  grid-column: span 12;
+}
+
+.included-in-price {
+  grid-column: span 6;
+  width: fit-content;
+}
+
+.list-of-included {
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.list-of-included > div {
+  display: grid;
+  grid-template-columns: auto 310px;
+  align-items: center;
+}
+
+.list-of-included > div > div {
+  margin-left: 16px;
+}
+
+.additional-options {
+  grid-column: span 6;
+}
+
+.options {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  margin-bottom: 36px;
+}
+
+.options-food {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 36px;
+}
+
+.options-water {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 36px;
+}
+
+.options > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.options-food > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.options-water > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.options > div > div {
+  margin-left: 16px;
+}
+
+.options-food > div > div {
+  margin-left: 16px;
+}
+
+.options-water > div > div {
+  margin-left: 16px;
+}
+
+.whings {
+  grid-column: span 12;
+  margin-bottom: 66px;
+}
+
+/*GENERAL*/
+.general {
+  grid-column: span 4;
+}
+
+.general-list > div {
+  display: grid;
+  grid-template-columns: auto 520px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.general-list > div > div {
+  margin-left: 16px;
+}
+
+.cancelation {
+  grid-column: span 4;
+  width: 268px;
+}
+
+.health {
+  grid-column: span 4;
+  width: 268px;
+}
+
+.show-more a{
+  color: #000;
+  font-family: Work Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 27px */
+  text-decoration-line: underline; 
+}
+
+/*Aimacije*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-me {
+  animation: bounceIn 3s ease-in-out;
+}
+.fade-in {
+  animation: fadeIn 3s ease-in-out;
+}
+
+/*RESPONZIVA*/
+
+@media only screen and (max-width: 1536px) {
+
+h1 {
+  font-size: 57px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 35px;
+}
+.p1 {
+  font-size: 14px;
+}
+.p2 {
+  font-size: 15px;
+}
+.p3 {
+  font-size: 13px;
+}
+.section-margine {
+  margin-top: 170px;
+}
+h4 {
+  font-size: 23px;
+}
+span {
+  font-size: 13px;
+}
+.hr {
+  width: 665px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+.blueprint {
+  padding-left: 130px;
+  padding-right: 140px;
+}
+.nav-blueprint a {
+  font-size: 22px;
+}
+.exterior-treci,
+.exterior-drugi {
+  grid-column-start: 8;
+}
+.exterior-drugi-txt {
+  grid-column-start: 8;
+  padding-bottom: 289px;
+  width: 368px;
+}
+.padding {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.lounge-area {
+  grid-column: span 5;
+}
+.waiter {
+  grid-column: span 7;
+}
+.welcome-yolo-n {
+  margin-top: -563px;
+}
+.photos-button {
+  left: -171px;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+.rectangle-first img {
+  height: 70vh;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 48px;
+}
+.p1 {
+  font-size: 13px;
+}
+.p2 {
+  font-size: 14px;
+}
+.p3 {
+  font-size: 12px;
+}
+.section-margine {
+  margin-top: 160px;
+}
+h4 {
+  font-size: 20px;
+}
+span {
+  font-size: 12px;
+}
+.hr {
+  width: 655px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.nav-link::after{
+  height: 7px;
+}
+.blueprint {
+  padding-left: 120px;
+  padding-right: 130px;
+}
+.nav-blueprint a {
+  font-size: 20px;
+}
+.exterior-prvi img {
+  width: 740px;
+}
+.exterior-treci,
+.exterior-drugi {
+  grid-column-start: 9;
+}
+.exterior-drugi-txt {
+  grid-column-start: 9;
+  padding-bottom: 289px;
+  width: 368px;
+}
+.padding {
+  padding-left: 49px;
+  padding-right: 0px;
+}
+.med-dining {
+  grid-column-start: 3;
+}
+.photos-button {
+  left: -131px;
+}
+.fish {
+  grid-column-start: 1;
+}
+.waiter {
+  padding-left: 30px;
+}
+.lounge-area {
+  grid-column: span 7;
+}
+.waiter {
+  grid-column: span 5;
+}
+.welcome-yolo-n {
+  margin-top: -280px;
+}
+.nav-link::after{
+  height: 3px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+
+.rectangle-first img {
+  height: 65vh;
+}
+.welcome-yolo {
+  padding-left: 50px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 40px;
+}
+.p1 {
+  font-size: 12px;
+}
+.p2 {
+  font-size: 13px;
+}
+.section-margine {
+  margin-top: 150px;
+}
+h4 {
+  font-size: 18px;
+}
+.photos-button {
+  left: -97px;
+  bottom: -38px;
+}
+.ship {
+  margin-top: -25px;
+} 
+.hr {
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blueprint {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nav-blueprint a {
+  font-size: 18px;
+}
+.exterior-prvi img {
+  width: 582px;
+}
+.exterior-treci,
+.exterior-drugi {
+  grid-column-start: 9;
+}
+.exterior-drugi-txt {
+  padding-bottom: 249px;
+}
+.padding {
+  padding-left: 49px;
+  padding-right: 0px;
+}
+.med-dining {
+  grid-column-start: 3;
+}
+.photos-button {
+  left: -97px;
+  bottom: -38px;
+  height: 40px;
+}
+.all-photos a {
+  font-size: 11px;
+}
+.fish {
+  grid-column-start: 1;
+}
+.waiter {
+  padding-left: 30px;
+}
+.lounge-area {
+  grid-column: span 7;
+}
+.waiter {
+  grid-column: span 5;
+}
+.nav-link::after{
+  height: 10px;
+  width: 106px;
+}
+.exterior-drugi img{
+  width: 308px;
+  margin-top: 47px;
+  height: 175px;
+}
+.exterior-treci img:first-child {
+  margin-top: -66px;
+  width: 308px;
+}
+.all-photos img{
+  margin-top: 0px;
+}
+.dinner img{ 
+  width: 446px;
+}
+.dinner{
+  grid-column-start: 7;
+}
+.pic-one > img:first-child,
+.pic-two > img:first-child,
+.pic-three >  img:first-child {
+  width: 282px;
+}
+.saloon-pic-one {
+  grid-column: span 5;
+  padding-left: 80px;
+}
+.waiter {
+  padding-left: 0px;
+}
+.waiter img {
+  width: 508px;
+}
+.price {
+  gap: 0px;
+}
+.nav-link::after{
+  height: 3px;
+}
+.financing-hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 690px;
+}
+.welcome-yolo-n {
+  margin-top: -261px;
+  padding-left: 50px;
+}
+.ante div:nth-child(2){
+  width: 512px;
+}
+.nav-toggle-left {
+  opacity: 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.strelica-dolje{
+  opacity: 0;
+}
+.main{
+  padding-left: 70px;
+}
+.rectangle-first img {
+  height: 65vh;
+}
+.welcome-yolo {
+  padding-left: 50px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 40px;
+}
+.p1 {
+  font-size: 12px;
+}
+.p2 {
+  font-size: 13px;
+}
+.section-margine {
+  margin-top: 150px;
+}
+h4 {
+  font-size: 18px;
+}
+.hr {
+  opacity: 0;
+}
+.exterior-treci img:first-child {
+  width: 300px;
+  margin-top: 0px;
+}
+.photos-button {
+  left: 406px;
+  bottom: 51px;
+  height: 37px;
+}
+.all-photos a {
+  font-size: 9px;
+}
+.blueprint {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nav-blueprint a {
+  font-size: 18px;
+}
+.exterior-prvi img,
+.exterior-drugi img,
+.exterior-treci img {
+  width: 300px;
+}
+.exterior-prvi{
+  grid-column: span 12;
+}
+.exterior-treci,
+.exterior-drugi {
+  grid-column: span 12;
+  margin-top: 0px
+}
+.exterior-drugi-txt {
+  padding-bottom: 249px;
+}
+.padding {
+  padding-left: 21px;
+  padding-right: 0px;
+}
+.med-dining {
+  grid-column: span 12;
+}
+.fish {
+  grid-column: span 12;
+}
+.waiter {
+  padding-left: 30px;
+}
+.lounge-area {
+  grid-column: span 12;
+}
+.waiter {
+  grid-column: span 12;
+}
+.nav-link::after{
+  height: 10px;
+  width: 106px;
+}
+.exterior-treci img {
+  margin-top: 0px;
+}
+.exterior-drugi img{
+  margin-top: -149px;
+}
+.dinner img{ 
+  width: 446px;
+}
+.dinner{
+  grid-column-start: 7;
+}
+.pic-one > img:first-child,
+.pic-two > img:first-child,
+.pic-three >  img:first-child {
+  width: 224px;
+}
+.saloon-pic-one {
+  grid-column: span 12;
+  padding-left: 80px;
+}
+.waiter {
+  justify-self: center;
+  padding-left: 0px;
+}
+.waiter img {
+  width: 508px;
+}
+.financing-hr {
+  opacity: 0;
+}
+.saloon-pic-one {
+  justify-self: center;
+  margin-right: 77px;
+}
+.saloon-pic-two {
+  grid-column: span 12;
+  margin-bottom: 250px;
+  margin-top: 150px;
+  justify-self: center;
+}
+.exterior-drugi-txt {
+  grid-column-start: 2;
+  padding-bottom: 143px;
+  justify-self: center;
+  padding-top: 150px;
+}
+.dinner {
+  grid-column-start: 2;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+.lounge-area {
+  justify-self: center;
+  margin-left: 0px;
+}
+.show-more{
+  width: 193px;
+}
+.rectangle-first {
+  grid-column: span 12;
+  justify-self: center;
+}
+.welcome-yolo-n {
+  margin-top: 40px;
+  justify-self: center;
+  grid-column: span 12;
+}
+.nav-blueprint {
+  display: none;
+}
+.grid-area {
+  margin-top: -139px;
+}
+.svg{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+.welcome-yolo {
+  padding-left: 20px;
+}
+.main {
+  width: 458px;
+}
+.nav-toggle-left {
+  opacity: 0;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 25px;
+}
+.p1 {
+  font-size: 10px;
+}
+.p2 {
+  font-size: 12px;
+}
+.section-margine {
+  margin-top: 40px;
+}
+h4 {
+  font-size: 14px;
+}
+.saloon-pic-two {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  justify-self: center;
+  margin-right: 50px;
+}
+.photos-button {
+  left: 251px;
+}
+.rectangle-first img {
+  height: 38vh;
+}
+.ante div:nth-child(2) {
+  width: 422px;
+}
+.basic-details {
+  grid-template-columns: auto;
+}
+.ameneties {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 23px;
+}
+.toys {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 23px;
+}
+.included-in-price {
+  grid-column: span 12;
+}
+.additional-options {
+  grid-column: span 12;
+  margin-top: 60px;
+}
+.general {
+  grid-column: span 12;
+}
+.cancelation {
+  grid-column: span 12;
+  margin-top: 40px;
+}
+.health {
+  grid-column: span 12;
+  margin-top: 40px;
+}
+.exterior-drugi-txt {
+  padding-top: 0px;
+  padding-bottom: 32px;
+}
+.plates-of-food{
+  margin-top: 0px;
+}
+.grid-area-inverted{
+  margin-top: 32px;
+}
+.fish {
+  margin-top: -278px;
+  margin-right: 48px;
+}
+.dinner {
+  margin-top: -100px;
+  margin-right: 46px;
+}
+.waiter {
+  margin-top: -174px;
+  margin-right: 27px;
+}
+.lounge-area{
+  margin-top: 32px;
+  margin-right: 39px;
+}
+.deposit-txt {
+  width: 371px;
+}
+.pic-one,
+.pic-two {
+  grid-column: span 12;
+  justify-self: center;
+  margin-bottom: 32px;
+}
+.pic-three{
+  grid-column: span 12;
+  justify-self: center;
+
+}
+.pic-one > img:first-child,
+.pic-two > img:first-child,
+.pic-three > img:first-child{
+  width: 340px;
+}
+.grid-area {
+  padding-right: 48px;
+}
+.cabins-pics {
+  padding-right: 32px;
+}
+.shrimp{
+  margin-top: 30px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+.padding {
+  padding-left: 14px;
+}
+.ante div:nth-child(2) {
+  width: 240px;
+}
+.welcome-yolo-n {
+  padding-left: 179px;
+}
+.tehnical {
+  gap: 19px;
+}
+.rectangle-first img {
+  height: 31vh;
+}
+.main {
+  padding-left: 15px;
+}
+.main {
+  width: 360px;
+}
+.price div:nth-of-type(2){
+  margin-left: -30px;
+}
+.price div:nth-of-type(3){
+  margin-left: -30px;
+}
+.deposit-txt {
+  width: 351px;
+}
+.photos-button {
+  left: 205px;
+}
+.lounge-area {
+  margin-top: 32px;
+  margin-right: 15px;
+}
+.saloon-pic-one img {
+  width: 399px;
+}
+.shrimp img{
+  width: 416px;
+}
+}
