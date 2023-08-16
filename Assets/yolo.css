@@ -210,7 +210,6 @@ span {
   content: "";
   height: 4px;
   width: 125px;
-  align-self: stretch;
   background: #0047FF;
   position: absolute;
   bottom: -25px;
@@ -617,6 +616,10 @@ span {
   font-weight: 500;
   line-height: 180%; /* 27px */
   text-decoration-line: underline; 
+}
+
+.show-more a:hover{
+  color: #0047FF;
 }
 
 /*Aimacije*/
