@@ -2,7 +2,7 @@
 Hello, welcome to my first project. I am Antonio Grgić, and I decided to learn some basics of front-end development and showcase the results through this project.
 
 Project overview:
-I have created three websites so far, and I am currently working on the fourth one. The first website is a 404 page, which is an error message and is designed to be simple. Each following website becomes more complex. 
+I have created three websites so far, and I am currently working on the fourth one. The first website is a 404 page, which is an error message and is designed to be simple. Each following website becomes more complex. Soon it will be made in React.
 
 Order of Creation:
 
